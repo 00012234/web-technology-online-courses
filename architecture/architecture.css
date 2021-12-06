@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+.wrapper-all{
+    width: 100%;
+    height: 125vh;
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper-architecture{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content:center;
+}
+.architecture-left{
+    width: 50%;
+}
+.architecture-left img{
+    width: 100%;
+    height: 100%;
+}
+.architecture-right{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.architecture-right h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: 20px 90px 0 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.1;
+}
+.architecture-right p{
+    font-style: italic;
+    margin: 20px 20px 0 0;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 80%;
+}
+.architecture-right button{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-style: none;
+    font-weight: 700;
+    margin: 38px auto 30px 0;
+    background-color: #ec6e0b;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 0;
+    font-size: 1rem;
+    align-self: flex-start;
+    transition: 0.5s ease;
+}
+.architecture-right button:hover{
+    background-color: black;
+    color: #ec6e0b;
+}
+.wrapper-more{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+.analysis{
+    background-color: #ec6e0b;
+    padding: 30px 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.analysis i{
+    background-color: white;
+    color: #ec6e0b;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 20px;
+}
+.analysis h2{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2.25rem;
+    margin: 30px 2px 0;
+    line-height: 1.1;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.analysis p{
+    width: 85%;
+    margin: 20px auto;
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.analysis button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: #111111;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 0;
+    align-self: flex-start;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+}
+.analysis button:hover{
+    background-color: black;
+    color: #ec6e0b;
+}
+.footer{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    color: #ffffff;
+    background-color: #333333;
+}
+.footer p{
+    font-size: 0.875rem;
+    padding: 50px 0;
+    width: 25%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.planning{
+    background-color: #f6851c;
+}
+.design{
+    background-color: #ec960b;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+    .wrapper-architecture{
+        flex-direction: column-reverse;
+    }
+    .architecture-right{
+        width: 100%;
+    }
+    .architecture-right h1{
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin: 20px 90px 0 0;
+        width: 90%;
+    }
+    .architecture-left{
+        width: 100%;
+    }
+    .wrapper-more{
+        flex-direction: column;
+    }
+    .wrapper-all{
+        height: 260vh;
+    }
+    .footer p{
+        width: 90%;
+    }
+}
+
+
+
+
+@media (min-width:768px) and (max-width:902px) {
+    .architecture-right h1{
+        font-size: 1.875rem;
+        font-weight: 700;
+        width: 90%;
+    }
+    .architecture-right button{
+        margin-bottom: 20px;
+    }
+    .wrapper-more{
+        width: 90%;
+    }
+    .footer p{
+        width: 90%;
+    }
+}
+@media (min-width:903px) and (max-width:1200px) {
+    .wrapper-architecture{
+        width: 95%;
+    }
+    .architecture-right button{
+        margin-bottom: 20px;
+    }
+    .wrapper-more{
+        width: 95%;
+    }
+    .wrapper-all{
+        height: 140vh;
+    }
+    .footer p{
+        width: 90%;
+    }
+}

@@ -1,0 +1,217 @@
+/* wrapper-cooking */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+.wrapper-cooking{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 80px;
+}
+.cooking-left{
+    width: 50%;
+    padding: 50px;
+}
+.cooking-left h1{
+    font-size: 5.625rem;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0 -143px 0 0;
+    font-family: Ubuntu, sans-serif;
+}
+.cooking-left h1 b{
+    color: #eb3f28;
+}
+.cooking-left p{
+    line-height: 2;
+    font-size: 1.125rem;
+    margin: 29px 0 0;
+    font-family: 'Open Sans',sans-serif;
+}
+.cooking-left button{
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    background-image: none;
+    margin: 44px auto 0 0;
+    padding: 15px 55px 15px 54px;
+    color: #ffffff;
+    background-color: #eb3f28;
+    border-radius: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    transition: 0.5s ease
+}
+.cooking-left button:hover{
+    background-color: black;
+}
+.cooking-right{
+    width: 50%;
+    position: relative;
+    margin-top: 70px;
+}
+.cooking-right::before{
+    position: absolute;
+    content: "";
+    top: -30px;
+    right: 60px;
+    width: 90%;
+    height: 90%;
+    border-radius:50% ;
+    background-image: url(../cooking/cooking-images/rfd-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.cooking-right img{
+    width: 100%;
+}
+.wrapper-food{
+    width: 80%;
+    display: flex;
+    margin: 20px auto -60px;
+    justify-content: space-evenly;
+}
+    
+.food{
+    width: 25%;
+    margin: 5px;
+}
+.food img{
+    object-fit: cover;
+    width: 100%;
+    height: 65%;
+}
+.cooking-footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #333333;
+    color: white;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+.cooking-footer p{
+    width: 28%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+    .wrapper-cooking{
+        width: 90%;
+        flex-direction: column;
+    }
+    .cooking-left{
+        width: 100%;
+        margin: 0;
+    }
+    .cooking-left h1{
+        font-size: 3.75rem;
+        width: 50%;
+    }
+    .cooking-left p{
+        width: 100%;
+    }
+    .cooking-right{
+        width: 100%;
+    }
+    .cooking-right::before{
+        right: 40px;
+    }
+    .wrapper-food{
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .food{
+        width: 100%;
+    }
+    .food img{
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+    .cooking-footer p{
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width:577px) and (max-width:767px) {
+    .food img{
+        height: 500px;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:902px) {
+    .wrapper-cooking{
+        width: 100%;
+    }
+    .wrapper-cooking h1{
+        width: 50%;
+        font-size: 3rem;
+    }
+    .cooking-right{
+        width: 70%;
+    }
+    .wrapper-food{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: -250px;
+    }
+    .food{
+        width: 45%;
+        margin: 0 10px;
+        margin-bottom: 0;
+    }
+    .cook{
+        position: relative;
+        top: -130px;
+    }
+    .cooking-footer{
+        position: relative;
+    }
+    .cooking-footer p{
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width:903px) and (max-width:1200px) {
+    .wrapper-cooking{
+        width: 100%;
+    }
+    .wrapper-food{
+        width: 95%;
+    }
+    .cooking-footer p{
+        width: 80%;
+    }
+}
