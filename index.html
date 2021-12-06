@@ -12,18 +12,21 @@
 </head>
 
 <body>
-    <nav class="wrapper-navigation__section">
-        <div class="navigation-section__image">
-            <img src="./online-courses/online-courses__image/default-logo.png" alt="image">
-        </div>
-        <div class="navigation-section">
-            <a href="#">HOME</a>
-            <a href="./cooking/cooking.html">COOKING</a>
-            <a href="./writing courses/writing.html">WRITING</a>
-            <a href="./architecture/architecture.html">ARCHITECTURE</a>
-            <a href="./finance/finance.html">FINANCE</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="wrapper-navigation__section">
+            <div class="navigation-section__image">
+                <img src="./online-courses/online-courses__image/default-logo.png" alt="image">
+            </div>
+            <div class="navigation-section">
+                <a href="#">HOME</a>
+                <a href="./cooking/cooking.html">COOKING</a>
+                <a href="./writing courses/writing.html">WRITING</a>
+                <a href="./architecture/architecture.html">ARCHITECTURE</a>
+                <a href="./finance/finance.html">FINANCE</a>
+            </div>
+        </nav>
+        <i class="fas fa-bars menuIcon"></i>
+    </header>
 
     <div class="wrapper-personal">
         <div class="wrapper-personal__left">
@@ -58,7 +61,7 @@
                 <p>
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
                 </p>
-                <button type="button">LEARN MORE</button>
+                <button type="button" class="learnMore">LEARN MORE</button>
             </div>
             <div class="online-learning__image">
                 <img src="./online-courses/online-courses__image/photo-1531545514256-b1400bc00f31.jfif" alt="image">
@@ -263,6 +266,9 @@
             </div>
         </div>
     </div>
+
+    <div class="dark-modal"></div>
+    <script src="./javascript/index.js"></script>
 </body>
 
 </html>
