@@ -5,8 +5,47 @@ let navItems = document.querySelector(".navigation-section")
 let menuIcon = document.querySelector(".menuIcon")
 let dark = document.querySelector(".dark-modal")
 let learnMore = document.querySelector(".learnMore")
+let leftSide = document.querySelector(".leftSide1")
+let rightSide = document.querySelector(".rightSide2")
+let rightSideDiv = document.querySelectorAll(".happy-section")
+let hiddenDiv = document.querySelector(".hiddenDiv")
 
 
+
+
+
+let textLeft = ["FUNNY AND HAPPY","FULFILL WITH LOVE","SPECIAL EDUCATION"]
+let textRight = ["TRANSPORTATION","FULLY EQUIPED","PROFESSIONAL TEACHING"]
+
+let paragraph = "We are group of teachers who really love childrens and enjoy every moment"
+
+textLeft.forEach((div,i)=>{
+    let innerDiv = document.createElement("div")
+    let h5 = document.createElement("h5")
+    let p = document.createElement("p")
+
+    h5.innerHTML = textLeft[i]
+    p.innerHTML = paragraph
+
+    innerDiv.appendChild(h5)
+    innerDiv.appendChild(p)
+    innerDiv.className = "funny-section"
+    leftSide.appendChild(innerDiv)
+})
+
+textRight.forEach((div,i)=>{
+    let innerDiv = document.createElement("div")
+    let h5 = document.createElement("h5")
+    let p = document.createElement("p")
+
+    h5.innerHTML = textRight[i]
+    p.innerHTML = paragraph
+
+    innerDiv.appendChild(h5)
+    innerDiv.appendChild(p)
+    innerDiv.className = "funny-section happy-section"
+    rightSide.appendChild(innerDiv)
+})
 
 
 
@@ -35,6 +74,15 @@ dark.addEventListener("click", function(){
     navItems.classList.remove("menu-ul")
 })
 
+
+
+
+
+
+hiddenDiv.addEventListener("click", function(){
+    hiddenDiv.classList.remove("hideDiv")
+})
+
 learnMore.addEventListener("click", function(){
-    
+    hiddenDiv.classList.add("hideDiv")
 })

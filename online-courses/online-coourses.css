@@ -543,6 +543,34 @@ header {
     font-size: 1rem;
 }
 
+.hiddenDiv {
+    background-color: rgba(0, 0, 0, 0.884);
+    position: fixed;
+    top: -200%;
+    left: 0%;
+    transition: 1s ease;
+    color: white;
+    padding: 20px;
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideDiv {
+    top: 0;
+}
+
+.infos {
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    overflow-y: scroll;
+}
+
 .hello-right button {
     color: #111111;
     text-transform: uppercase;
