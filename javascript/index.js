@@ -9,7 +9,11 @@ let leftSide = document.querySelector(".leftSide1")
 let rightSide = document.querySelector(".rightSide2")
 let rightSideDiv = document.querySelectorAll(".happy-section")
 let hiddenDiv = document.querySelector(".hiddenDiv")
-
+let form = document.querySelector(".form-info")
+let textName = document.querySelector(".textName")
+let textEmail = document.querySelector(".textEmail")
+let textField = document.querySelector(".textField")
+let checkInput = document.querySelector(".checkInput")
 
 
 
@@ -86,3 +90,35 @@ hiddenDiv.addEventListener("click", function(){
 learnMore.addEventListener("click", function(){
     hiddenDiv.classList.add("hideDiv")
 })
+
+
+form.addEventListener("submit", function(e){
+    e.preventDefault()
+    if(textField.value !==""){
+        textField.style.border = "1px solid white"
+    }else{
+        textField.style.border = "1px solid red"
+    }
+
+    if(textName.value !==""){
+        textName.style.border = "1px solid white"
+    }else{
+        textName.style.border = "1px solid red"
+    }
+
+    if(textEmail.value !==""){
+        textEmail.style.border = "1px solid white"
+    }else{
+        textEmail.style.border = "1px solid red"
+    }
+    
+    if(textField.value !=="" && textName.value !==""&&textEmail.value !==""){
+        alert("thank you, we will contact you soon")
+        textField.value = ""
+        textName.value = ""
+        textEmail.value = ""
+    }
+
+    
+})
+
